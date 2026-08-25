@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCSE Success Card 🎓✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1 -->
+        <div class="page active" id="page-1">
+            <span class="page-number">Page 1 of 3</span>
+            <h2>Dear [Name] 🎓</h2>
+            <p>Write your first section here... talk about how fast time went or how far she has come in high school.</p>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page" id="page-2">
+            <span class="page-number">Page 2 of 3</span>
+            <h2>The Finish Line 🚀</h2>
+            <p>Write your main encouragement here... remind her of all the late nights, the hard work, and why she's ready for KCSE.</p>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page" id="page-3">
+            <span class="page-number">Page 3 of 3</span>
+            <h2>After KCSE 🎉</h2>
+            <p>Write your final sign-off here... your wishes for her results and the fun plans waiting on the other side!</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="changePage(-1)" disabled>Previous</button>
+            <button id="nextBtn" onclick="changePage(1)">Next Page ➔</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
