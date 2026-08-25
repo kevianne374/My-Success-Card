@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #ffb6c1;
+}
+
+.book-container {
+    max-width: 450px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.92);
+    border: 3px solid #ff758f;
+    border-radius: 20px;
+    padding: 30px 25px 25px 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff4d6d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #c9184a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+p {
+    color: #333333;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #c9184a;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #ffccd5;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
